@@ -1,9 +1,9 @@
 const fs = require('fs');
 const express = require('express');
 const app = express();
+const PORT = process.env.PORT || 80;
 
-
-app.listen(8000, () => {console.log("Server Up!")});
+app.listen(PORT, () => {console.log("Server Up!")});
 
 app.use('/', express.static('assets'))
 
