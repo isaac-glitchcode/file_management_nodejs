@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 8001
 
 app.listen(PORT, () => {console.log("Server Up!")});
-console.log("Puerto: "PORT);
+console.log("Puerto: "+PORT);
 app.use('/', express.static('assets'))
 
 app.get('/inicio',(request,response) => {
